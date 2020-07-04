@@ -1,0 +1,24 @@
+.b { /* Modifications : la couleur de fond de page - la police - l'unité utilisée pour la taille de la police  */
+  background-color :#fff;
+  font-family :Serif;
+  font-size :15pt;
+}
+
+.titre { /* Affichage du titre */
+  margin :0;
+  padding :0;
+  text-indent :0;
+  line-height :25pt;
+  font-size :25pt;
+}
+
+.st{
+  color :#000;
+  font-style: italic;
+  font-size: 12pt;
+}
+.photos{
+ margin:0 0 1px 1px; padding:1px;
+ width:50px;
+height:10px;}
+}

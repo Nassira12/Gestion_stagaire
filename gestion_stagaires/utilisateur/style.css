@@ -1,0 +1,349 @@
+﻿/* Principal */
+#menu{
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 0 0;
+        list-style: none;
+        background: #FFFFFF;
+        background: -moz-linear-gradient(#FFFFFF, #FFFFFF);
+        background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #FFFFFF),color-stop(1, #FFFFFF));
+        background: -webkit-linear-gradient(#FFFFFF, #FFFFFF);
+        background: -o-linear-gradient(#FFFFFF, #FFFFFF);
+        background: -ms-linear-gradient(#FFFFFF, #FFFFFF);
+        background: linear-gradient(#FFFFFF, #FFFFFF);
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        -moz-box-shadow: 0 2px 1px #048b9a;
+        -webkit-box-shadow: 0 2px 1px #048b9a;
+        box-shadow: 0 2px 1px #048b9a;
+		
+}
+
+#menu li{
+        float: left;
+        padding: 0 0 10px 0;
+        position: relative;
+}
+
+#menu a{
+        float: left;
+        height: 25px;
+        padding: 0 25px;
+        color: #048b9a;
+        text-transform: uppercase;
+        font: bold 12px/25px Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+        color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+        color: #fafafa;
+}
+
+#menu li:hover > ul{
+        display: block;
+}
+
+/* Sous-menu */
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(#FFFFFF, #FFFFFF);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #FFFFFF),color-stop(1, #FFFFFF));
+    background: -webkit-linear-gradient(#FFFFFF,#FFFFFF);
+    background: -o-linear-gradient(#FFFFFF, #FFFFFF);
+    background: -ms-linear-gradient(#FFFFFF, #FFFFFF);
+    background: linear-gradient(#FFFFFF, #FFFFFF);
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#menu ul a{
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+	
+}
+
+*html #menu ul a{ /* IE6 */
+        height: 10px;
+        width: 150px;
+}
+
+*:first-child+html #menu ul a{ /* IE7 */
+        height: 10px;
+        width: 150px;
+}
+
+#menu ul a:hover{
+        background: #FFFFFF;
+        background: -moz-linear-gradient(#FFFFFFc,  #FFFFFF);
+        background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FFFFFF));
+        background: -webkit-linear-gradient(#FFFFFF,  #FFFFFF);
+        background: -o-linear-gradient(#FFFFFF,  #FFFFFF);
+        background: -ms-linear-gradient(#FFFFFF,  #FFFFFF);
+        background: linear-gradient(#FFFFFF,  #FFFFFF);
+}
+
+#menu ul li:first-child a{
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #048b9a;
+}
+
+#menu ul li:last-child a{
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* RĂ©tablissement du flottement */
+#menu:after{
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+}
+wesome! However, it is very hard to see the text now. What if we tried making everything white? Here are the lines of our CSS file to add/change:
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'segoe ui', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #f5f5f5;
+}
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+table td {
+    width: 50%;
+    padding: 30px;
+}
+.form {
+    display: block;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.form.centrer {
+    max-width: 460px;
+    margin: 50px auto;
+}
+h2 {
+    display: block;
+    font-size: 30px;
+    color: #444;
+    line-height: 60px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+h3 {
+    display: block;
+    font-size: 20px;
+    color: #444;
+    line-height: 35px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+b {
+    font-weight: 600;
+}
+p {
+    display: block;
+    font-size: 16px;
+    color: black;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  font-style:italic;
+  font-family:times,serif;
+}
+
+
+textarea,
+input[type='text'],
+input[type='number'],
+input[type='password'],
+input[type='email'] {
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    padding: 0 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.btn,
+input[type='submit'] {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+    color: #fff;
+    background: #0a6daa;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.erreur {
+    display: block;
+    max-width: 960px;
+    background: #fff;
+    color: red;
+    border-left: 3px solid red;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    padding: 20px;
+}
+.success {
+    display: block;
+    max-width: 960px;
+    background: #fff;
+    color: green;
+    border-left: 3px solid green;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    padding: 20px;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
